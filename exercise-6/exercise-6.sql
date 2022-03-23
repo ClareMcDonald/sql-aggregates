@@ -5,7 +5,7 @@ SELECT
     email,
     RANK() OVER (
         ORDER BY 
-        SUM(amount) DESC
+            SUM(amount) DESC
     )
 FROM
     customer
